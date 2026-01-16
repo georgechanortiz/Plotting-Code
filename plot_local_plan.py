@@ -62,8 +62,7 @@ def plot_local_plan(local_plan, t_window, *args):
     # Trim the data based on the requested window
     local_plan["time"] = local_plan["time"][traj_idx]
     local_plan["solveTime"] = local_plan["solveTime"][traj_idx]
-    local_plan["elementTimes"] = np.asarray(
-        local_plan["elementTimes"])[traj_idx]
+    local_plan["elementTimes"] = np.asarray(        local_plan["elementTimes"])[traj_idx]
     local_plan["cost"] = local_plan["cost"][traj_idx]
     local_plan["iterations"] = local_plan["iterations"][traj_idx]
     local_plan["horizonLength"] = local_plan["horizonLength"][traj_idx]

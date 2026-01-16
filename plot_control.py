@@ -34,9 +34,6 @@ def plot_control(control_traj, t_window, *args):
     Returns:
         int: Figure number created.
 
-    Example:
-        >>> fig_num = plot_control(control_data, [0, 10])
-        >>> fig_num = plot_control(control_data, [], '--', False)
     """
     # Use existing figure handles if requested
     if len(args) >= 3 and len(args[2]) > 0:
